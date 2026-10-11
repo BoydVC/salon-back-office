@@ -1,0 +1,247 @@
+{
+  "demo": true,
+  "label": "DEMO / sample data — fictional clients only",
+  "salon": {
+    "name": "Miranda's Chair",
+    "tagline": "Back office demo for Miranda Boyd",
+    "stylist": "Miranda",
+    "timezone": "America/New_York",
+    "address": "Demo Suite · Millersville, MD"
+  },
+  "weekStart": "2026-10-06",
+  "services": [
+    {"id": "cut", "name": "Cut & Style", "minutes": 60, "price": 65},
+    {"id": "color", "name": "Color", "minutes": 120, "price": 145},
+    {"id": "highlights", "name": "Highlights", "minutes": 150, "price": 185},
+    {"id": "blowout", "name": "Blowout", "minutes": 45, "price": 45},
+    {"id": "treatment", "name": "Treatment", "minutes": 45, "price": 55},
+    {"id": "bridal", "name": "Bridal Trial", "minutes": 90, "price": 120}
+  ],
+  "clients": [
+    {
+      "id": "c1",
+      "name": "JT",
+      "demo": true,
+      "phone": "([redacted-phone]",
+      "email": "jt.demo@example.com",
+      "since": "2023-04",
+      "formula": {
+        "brand": "Redken",
+        "mix": "7N + 8G · 20 vol",
+        "notes": "Keep warm gold; avoid ash. Root touch every 6–7 weeks."
+      },
+      "notes": "Prefers early Saturday. Talkative — likes Orioles chat.",
+      "lastVisit": "2026-09-27",
+      "tags": ["color", "regular"]
+    },
+    {
+      "id": "c2",
+      "name": "Laney",
+      "demo": true,
+      "phone": "([redacted-phone]",
+      "email": "laney.demo@example.com",
+      "since": "2024-01",
+      "formula": {
+        "brand": "Wella",
+        "mix": "Balayage · 9P + 10N · 30 vol",
+        "notes": "Soft face frame. Tone with Illumina 10/36."
+      },
+      "notes": "Bridal party lead. Sensitive scalp — use low-ammonia.",
+      "lastVisit": "2026-10-04",
+      "tags": ["balayage", "bridal"]
+    },
+    {
+      "id": "c3",
+      "name": "Ava M.",
+      "demo": true,
+      "phone": "([redacted-phone]",
+      "email": "ava.m.demo@example.com",
+      "since": "2022-11",
+      "formula": {
+        "brand": "Redken",
+        "mix": "6N · 10 vol gloss",
+        "notes": "Gloss only — no lightening."
+      },
+      "notes": "Quick visits. Pays card. Tip usually 20%.",
+      "lastVisit": "2026-09-20",
+      "tags": ["gloss", "express"]
+    },
+    {
+      "id": "c4",
+      "name": "Priya S.",
+      "demo": true,
+      "phone": "([redacted-phone]",
+      "email": "priya.demo@example.com",
+      "since": "2025-06",
+      "formula": {
+        "brand": "Olaplex",
+        "mix": "No.1 + No.2 bond · then 8N",
+        "notes": "Damaged from prior bleach — bond first every visit."
+      },
+      "notes": "New client path. Bring protein treatment.",
+      "lastVisit": "2026-10-01",
+      "tags": ["repair", "color"]
+    },
+    {
+      "id": "c5",
+      "name": "Morgan K.",
+      "demo": true,
+      "phone": "([redacted-phone]",
+      "email": "morgan.demo@example.com",
+      "since": "2021-08",
+      "formula": {
+        "brand": "Schwarzkopf",
+        "mix": "5RV · 20 vol",
+        "notes": "Deep violet-red. Refresh midshaft with 10 vol."
+      },
+      "notes": "Loyal since 2021. Books next visit before leaving.",
+      "lastVisit": "2026-09-15",
+      "tags": ["vivid", "loyal"]
+    },
+    {
+      "id": "c6",
+      "name": "Sam R.",
+      "demo": true,
+      "phone": "([redacted-phone]",
+      "email": "sam.r.demo@example.com",
+      "since": "2024-09",
+      "formula": {
+        "brand": "—",
+        "mix": "Cut only",
+        "notes": "No color. Long layers, face-framing."
+      },
+      "notes": "Walk-in friendly if a gap opens.",
+      "lastVisit": "2026-08-30",
+      "tags": ["cut"]
+    }
+  ],
+  "bookings": [
+    {"id": "b1", "date": "2026-10-06", "start": "09:00", "end": "11:00", "clientId": "c1", "serviceId": "color", "status": "done", "price": 145},
+    {"id": "b2", "date": "2026-10-06", "start": "11:30", "end": "12:15", "clientId": "c3", "serviceId": "blowout", "status": "done", "price": 45},
+    {"id": "b3", "date": "2026-10-06", "start": "13:00", "end": "15:30", "clientId": "c2", "serviceId": "highlights", "status": "done", "price": 185},
+    {"id": "b4", "date": "2026-10-07", "start": "10:00", "end": "11:00", "clientId": "c6", "serviceId": "cut", "status": "done", "price": 65},
+    {"id": "b5", "date": "2026-10-07", "start": "11:30", "end": "13:30", "clientId": "c4", "serviceId": "color", "status": "done", "price": 145},
+    {"id": "b6", "date": "2026-10-07", "start": "14:00", "end": "14:45", "clientId": "c3", "serviceId": "treatment", "status": "done", "price": 55},
+    {"id": "b7", "date": "2026-10-08", "start": "09:30", "end": "11:00", "clientId": "c5", "serviceId": "color", "status": "done", "price": 145},
+    {"id": "b8", "date": "2026-10-08", "start": "12:00", "end": "12:45", "clientId": "c1", "serviceId": "blowout", "status": "done", "price": 45},
+    {"id": "b9", "date": "2026-10-09", "start": "10:00", "end": "11:00", "clientId": "c6", "serviceId": "cut", "status": "booked", "price": 65},
+    {"id": "b10", "date": "2026-10-09", "start": "11:30", "end": "14:00", "clientId": "c2", "serviceId": "highlights", "status": "booked", "price": 185},
+    {"id": "b11", "date": "2026-10-09", "start": "14:30", "end": "15:15", "clientId": "c3", "serviceId": "blowout", "status": "booked", "price": 45},
+    {"id": "b12", "date": "2026-10-10", "start": "09:00", "end": "10:30", "clientId": "c4", "serviceId": "treatment", "status": "booked", "price": 55},
+    {"id": "b13", "date": "2026-10-10", "start": "11:00", "end": "13:00", "clientId": "c5", "serviceId": "color", "status": "booked", "price": 145},
+    {"id": "b14", "date": "2026-10-10", "start": "14:00", "end": "15:30", "clientId": "c1", "serviceId": "color", "status": "booked", "price": 145},
+    {"id": "b15", "date": "2026-10-11", "start": "10:00", "end": "11:30", "clientId": "c2", "serviceId": "bridal", "status": "booked", "price": 120},
+    {"id": "b16", "date": "2026-10-11", "start": "13:00", "end": "14:00", "clientId": "c6", "serviceId": "cut", "status": "booked", "price": 65},
+    {"id": "b17", "date": "2026-10-11", "start": "14:30", "end": "15:15", "clientId": "c3", "serviceId": "blowout", "status": "booked", "price": 45}
+  ],
+  "inventory": [
+    {"id": "p1", "name": "Redken Shades EQ 07N", "sku": "RDK-07N", "qty": 8, "reorderAt": 4, "unit": "tube", "cost": 12.5},
+    {"id": "p2", "name": "Redken Shades EQ 08G", "sku": "RDK-08G", "qty": 3, "reorderAt": 4, "unit": "tube", "cost": 12.5},
+    {"id": "p3", "name": "Wella Blondor Soft Blonde", "sku": "WEL-BLD", "qty": 2, "reorderAt": 3, "unit": "jar", "cost": 28.0},
+    {"id": "p4", "name": "Olaplex No.1 Bond", "sku": "OLX-01", "qty": 1, "reorderAt": 2, "unit": "bottle", "cost": 55.0},
+    {"id": "p5", "name": "Olaplex No.2 Bond", "sku": "OLX-02", "qty": 5, "reorderAt": 3, "unit": "bottle", "cost": 48.0},
+    {"id": "p6", "name": "Foil Sheets (silver)", "sku": "SUP-FOIL", "qty": 420, "reorderAt": 200, "unit": "sheet", "cost": 0.04},
+    {"id": "p7", "name": "Color Gloves (M)", "sku": "SUP-GLV", "qty": 18, "reorderAt": 24, "unit": "box", "cost": 6.0},
+    {"id": "p8", "name": "Schwarzkopf Igora 5RV", "sku": "SKF-5RV", "qty": 4, "reorderAt": 2, "unit": "tube", "cost": 11.0},
+    {"id": "p9", "name": "Illumina 10/36 Toner", "sku": "WEL-1036", "qty": 6, "reorderAt": 3, "unit": "tube", "cost": 14.0},
+    {"id": "p10", "name": "Protein Treatment Mask", "sku": "RX-PROT", "qty": 7, "reorderAt": 4, "unit": "jar", "cost": 18.0}
+  ],
+  "revenueByWeek": [
+    {"week": "2026-08-17", "label": "Aug 17", "revenue": 980, "appts": 9},
+    {"week": "2026-08-24", "label": "Aug 24", "revenue": 1120, "appts": 11},
+    {"week": "2026-08-31", "label": "Aug 31", "revenue": 890, "appts": 8},
+    {"week": "2026-09-07", "label": "Sep 7", "revenue": 1240, "appts": 12},
+    {"week": "2026-09-14", "label": "Sep 14", "revenue": 1310, "appts": 13},
+    {"week": "2026-09-21", "label": "Sep 21", "revenue": 1050, "appts": 10},
+    {"week": "2026-09-28", "label": "Sep 28", "revenue": 1185, "appts": 11},
+    {"week": "2026-10-06", "label": "Oct 6", "revenue": 1495, "appts": 17}
+  ],
+  "receipts": [
+    {
+      "id": "r1",
+      "bookingId": "b1",
+      "date": "2026-10-06",
+      "clientId": "c1",
+      "clientName": "JT",
+      "lines": [
+        {"desc": "Color", "amount": 145},
+        {"desc": "Tip", "amount": 30}
+      ],
+      "total": 175,
+      "method": "Card",
+      "status": "paid"
+    },
+    {
+      "id": "r2",
+      "bookingId": "b2",
+      "date": "2026-10-06",
+      "clientId": "c3",
+      "clientName": "Ava M.",
+      "lines": [
+        {"desc": "Blowout", "amount": 45},
+        {"desc": "Tip", "amount": 10}
+      ],
+      "total": 55,
+      "method": "Card",
+      "status": "paid"
+    },
+    {
+      "id": "r3",
+      "bookingId": "b3",
+      "date": "2026-10-06",
+      "clientId": "c2",
+      "clientName": "Laney",
+      "lines": [
+        {"desc": "Highlights", "amount": 185},
+        {"desc": "Toner add-on", "amount": 25},
+        {"desc": "Tip", "amount": 40}
+      ],
+      "total": 250,
+      "method": "Card",
+      "status": "paid"
+    },
+    {
+      "id": "r4",
+      "bookingId": "b4",
+      "date": "2026-10-07",
+      "clientId": "c6",
+      "clientName": "Sam R.",
+      "lines": [
+        {"desc": "Cut & Style", "amount": 65},
+        {"desc": "Tip", "amount": 15}
+      ],
+      "total": 80,
+      "method": "Cash",
+      "status": "paid"
+    },
+    {
+      "id": "r5",
+      "bookingId": "b5",
+      "date": "2026-10-07",
+      "clientId": "c4",
+      "clientName": "Priya S.",
+      "lines": [
+        {"desc": "Color", "amount": 145},
+        {"desc": "Olaplex add-on", "amount": 35},
+        {"desc": "Tip", "amount": 35}
+      ],
+      "total": 215,
+      "method": "Card",
+      "status": "paid"
+    },
+    {
+      "id": "r6",
+      "bookingId": "b7",
+      "date": "2026-10-08",
+      "clientId": "c5",
+      "clientName": "Morgan K.",
+      "lines": [
+        {"desc": "Color", "amount": 145},
+        {"desc": "Tip", "amount": 30}
+      ],
+      "total": 175,
+      "method": "Card",
+      "status": "paid"
+    }
+  ]
+}

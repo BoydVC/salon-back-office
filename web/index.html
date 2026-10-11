@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="theme-color" content="#5c3d2e"/>
+<title>Salon Back Office · DEMO</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div id="app">
+  <div class="demo-banner" role="status">
+    <strong>DEMO / sample data</strong>
+    <span>— fictional clients only · never real PII · JT &amp; Laney are demo stand-ins</span>
+  </div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">✂</span>
+      <div>
+        <h1 id="salonName">Miranda's Chair</h1>
+        <p class="tag" id="salonTag">Back office demo</p>
+      </div>
+    </div>
+    <div class="top-meta">
+      <span class="pill demo-pill">DEMO</span>
+      <button type="button" class="btn ghost" id="btnReceipts" aria-label="Open receipts">Receipts</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <a href="#week" class="tab" data-screen="week">Week</a>
+    <a href="#clients" class="tab" data-screen="clients">Clients</a>
+    <a href="#inventory" class="tab" data-screen="inventory">Inventory</a>
+    <a href="#revenue" class="tab" data-screen="revenue">Revenue</a>
+    <a href="#about" class="tab" data-screen="about">About</a>
+  </nav>
+
+  <main>
+    <section id="screen-week" class="screen" hidden>
+      <div class="section-head">
+        <h2>Bookings · week view</h2>
+        <p class="hint" id="weekLabel">Week of …</p>
+      </div>
+      <div class="week-stats" id="weekStats"></div>
+      <div class="week-grid" id="weekGrid"></div>
+    </section>
+
+    <section id="screen-clients" class="screen" hidden>
+      <div class="section-head">
+        <h2>Clients</h2>
+        <p class="hint">Color formulas + notes · all DEMO cards</p>
+      </div>
+      <div class="client-grid" id="clientGrid"></div>
+    </section>
+
+    <section id="screen-inventory" class="screen" hidden>
+      <div class="section-head">
+        <h2>Product inventory</h2>
+        <p class="hint">Low stock highlighted when qty ≤ reorder point</p>
+      </div>
+      <div class="inv-table-wrap">
+        <table class="inv-table" id="invTable">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>SKU</th>
+              <th>Qty</th>
+              <th>Reorder</th>
+              <th>Cost</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="screen-revenue" class="screen" hidden>
+      <div class="section-head">
+        <h2>Revenue by week</h2>
+        <p class="hint">DEMO totals · service + tips where recorded</p>
+      </div>
+      <div class="rev-summary" id="revSummary"></div>
+      <div class="chart-wrap">
+        <svg id="revChart" viewBox="0 0 720 280" role="img" aria-label="Revenue by week chart"></svg>
+      </div>
+      <div class="rev-legend" id="revLegend"></div>
+    </section>
+
+    <section id="screen-about" class="screen" hidden>
+      <h2>About Salon Back Office</h2>
+      <div class="about-card">
+        <p><strong>Salon Back Office</strong> is a TokenMax burn-pool demo inspired by @WetterBo’s hair-salon back office — a warm, mobile-friendly desk for Miranda’s chair.</p>
+        <ul>
+          <li>Week bookings calendar</li>
+          <li>Client cards with formulas + notes</li>
+          <li>Product inventory with low-stock flags</li>
+          <li>Revenue-by-week chart + receipt drawer</li>
+        </ul>
+        <p class="warn"><strong>DEMO only.</strong> All clients, phones, emails, and receipts are fictional sample data. JT and Laney appear as first-name demo stand-ins (hair clients, not family). No real client PII is stored or invented as real.</p>
+        <p>Offline single file: <code>dist/salon-back-office.html</code> · local server <code>127.0.0.1:4305</code></p>
+      </div>
+    </section>
+  </main>
+
+  <aside id="receiptDrawer" class="drawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel" role="dialog" aria-labelledby="drawerTitle">
+      <div class="drawer-head">
+        <h2 id="drawerTitle">Receipts</h2>
+        <button type="button" class="btn icon" id="btnCloseDrawer" aria-label="Close">✕</button>
+      </div>
+      <p class="hint drawer-hint">DEMO receipts · tap a row for detail</p>
+      <div class="receipt-list" id="receiptList"></div>
+      <div class="receipt-detail" id="receiptDetail" hidden></div>
+    </div>
+  </aside>
+</div>
+<script>window.__DEMO__ = /*__DEMO__*/ null /*__/DEMO__*/;</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
