@@ -2,9 +2,9 @@
   "demo": true,
   "label": "DEMO / sample data — fictional clients only",
   "salon": {
-    "name": "Miranda's Chair",
-    "tagline": "Back office demo for Miranda Boyd",
-    "stylist": "Miranda",
+    "name": "Jordan's Chair",
+    "tagline": "Back office demo for Jordan Doe",
+    "stylist": "Jordan",
     "timezone": "America/New_York",
     "address": "Demo Suite · Millersville, MD"
   },
