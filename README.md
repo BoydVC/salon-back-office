@@ -1,6 +1,6 @@
 # Salon Back Office
 
-Warm, mobile-friendly hair-salon desk for **Miranda Boyd** — TokenMax burn build inspired by @WetterBo’s salon back office.
+Warm, mobile-friendly hair-salon desk for **Jordan Doe** — TokenMax burn build inspired by @WetterBo’s salon back office.
 
 **DEMO / sample data only.** All clients, phones, emails, formulas, and receipts are fictional. JT and Laney appear as first-name demo stand-ins (hair clients, not family). No real client PII.
 
